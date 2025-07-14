@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Temparature Converter</title>
+
+   <link rel="stylesheet" href="temparature-converter.css" />
+   <script src="temparature-converter.js" defer></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap"
+      rel="stylesheet">
+</head>
+
+<body>
+   <main>
+      <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to <br>Temperature Converter</h1>
+      <section class="custom-converter">
+         <h2>Single Temperature Conversion</h2>
+
+         <input type="number" id="single-input" placeholder="Enter Temperature" />
+
+         <div class="unit-selector">
+            <label><input type="radio" name="unit" value="C" checked /> Celsius</label>
+            <label><input type="radio" name="unit" value="F" /> Fahrenheit</label>
+            <label><input type="radio" name="unit" value="K" /> Kelvin</label>
+         </div>
+
+         <button class="button convert-btn" id="convert-btn">Convert</button>
+
+         <div class="result-display" id="result-display">Converted temperature will appear here.</div>
+      </section>
+
+</body>
+
+</html>

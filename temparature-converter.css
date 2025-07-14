@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+body,
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(214deg,
+      #00dbde 14%,
+      #fc00ff 46%,
+      #00ffa5 86%);
+}
+
+body {
+  min-height: 100vh;
+  animation: animatedGradient 20s linear infinite;
+  background-size: 400% 400%;
+  background-image: linear-gradient(14deg,
+      #00dbde,
+      #fc00ff,
+      #00ffa5,
+      #00dbde);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-height: 100vh;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom,
+      #20ba05,
+      #18ec11,
+      rgb(189, 39, 39));
+  padding: 75px 100px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: #000100;
+  font-size: 40px;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+
+.container {
+  margin-top: 20px;
+}
+
+input {
+  background-color: #fff;
+  min-width: 350px;
+  margin: 15px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.5s;
+}
+
+input:focus {
+  box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+label {
+  font-weight: bold;
+}
+
+label[for="kelvin"] {
+  margin-left: 10px;
+}
+
+#common-points-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+}
+
+.button {
+  color: #fff;
+  background-color: transparent;
+  margin: 10px;
+  padding: 10px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s transform;
+}
+
+.button:hover {
+  color: #000;
+  background-color: #3dc10d;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.custom-converter {
+  margin-top: 50px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.custom-converter h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.unit-selector {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  color: #000;
+  font-weight: bold;
+}
+
+.unit-selector input {
+  margin-right: 8px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.convert-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 25px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.result-display {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
